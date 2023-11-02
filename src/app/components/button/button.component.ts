@@ -11,7 +11,8 @@ export class ButtonComponent {
   @Input() bg: string = '#000';
   @Output() btnClick = new EventEmitter();
 
-  onClick = () => {
-    this.btnClick.emit();
+  onClick = (event: any) => {
+    event.preventDefault();
+    this.btnClick.emit(event);
   };
 }

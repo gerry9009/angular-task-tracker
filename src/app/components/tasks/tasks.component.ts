@@ -32,4 +32,11 @@ export class TasksComponent implements OnInit {
     // Update Server
     this.taskService.toggleTaskReminder(task).subscribe();
   };
+
+  addTask = (task: Task) => {
+    this.tasks.push(task);
+    this.taskService.addTask(task).subscribe();
+
+    console.log(task);
+  };
 }
