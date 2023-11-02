@@ -23,6 +23,12 @@
       "day": "may 8th at 10:00pm",
       "reminder": false,
       "id": 4
+    },
+    {
+      "text": "Olvasni",
+      "day": "20202",
+      "reminder": false,
+      "id": 5
     }
   ]
 }

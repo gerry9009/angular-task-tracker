@@ -1,9 +1,9 @@
 <header>
   <h1>{{ title }}</h1>
   <app-button
-    [text]="'Close'"
-    [color]="'#191716'"
-    [bg]="'#E0E2DB'"
+    [text]="showAddTask ? 'Close' : 'Add'"
+    [color]="showAddTask ? '#E6AF2E' : '#191716'"
+    [bg]="showAddTask ? '#E0E2DB' : '#E6AF2E'"
     (btnClick)="toggleAddTask()"
   ></app-button>
 </header>
