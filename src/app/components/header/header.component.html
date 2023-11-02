@@ -1,6 +1,7 @@
 <header>
   <h1>{{ title }}</h1>
   <app-button
+    *ngIf="hasRoute('/')"
     [text]="showAddTask ? 'Close' : 'Add'"
     [color]="showAddTask ? '#E6AF2E' : '#191716'"
     [bg]="showAddTask ? '#E0E2DB' : '#E6AF2E'"
